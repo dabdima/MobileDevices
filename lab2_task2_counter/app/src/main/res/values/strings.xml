@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab2_task2_counter</string>
+    <string name="count">count</string>
+    <string name="count_initial_value">0</string>
+</resources>
