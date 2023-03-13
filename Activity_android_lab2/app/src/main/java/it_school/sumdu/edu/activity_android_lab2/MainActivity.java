@@ -16,10 +16,11 @@
 
 package it_school.sumdu.edu.activity_android_lab2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -50,10 +51,13 @@ public class MainActivity extends AppCompatActivity {
      *             Since a toast always shows on the top,
      *             the passed in view is not used.
      */
-    public void showToast(View view) {
-        Toast toast = Toast.makeText(this, R.string.toast_message,
-                Toast.LENGTH_SHORT);
-        toast.show();
+    public void sayHello(View view) {
+//        Toast toast = Toast.makeText(this, R.string.toast_message,
+//                Toast.LENGTH_SHORT);
+//        toast.show();
+        Intent intent = new Intent(this, SayHello.class);
+        intent.putExtra("mCount", mCount);
+        startActivity(intent);
     }
 
     /*
