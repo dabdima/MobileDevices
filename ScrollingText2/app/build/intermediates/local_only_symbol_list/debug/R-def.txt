@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen line_spacing
+dimen padding_regular
+id article
+id article_heading
+id article_subheading
+layout activity_main
+mipmap ic_launcher
+string app_name
+string article_subtitle
+string article_text
+string article_title
+style AppTheme
