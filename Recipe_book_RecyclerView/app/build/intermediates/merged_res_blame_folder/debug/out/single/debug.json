@@ -28,12 +28,12 @@
         "source": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\src\\main\\res\\layout\\wordlist_item.xml"
     },
     {
-        "merged": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\build\\intermediates\\merged_res\\debug\\drawable_border.xml.flat",

@@ -79,15 +79,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
      */
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-
         ListItem listItem = listItems.get(position);
         holder.textViewHead.setText(listItem.getHead());
         holder.textViewDesc.setText(listItem.getDesc());
-
-        /*// Retrieve the data for that position.
-        String mCurrent = mWordList.get(position);
-        // Add the data to the view holder.
-        holder.wordItemView.setText(mCurrent);*/
     }
 
     /**
@@ -99,16 +93,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public int getItemCount() {
         return listItems.size();
     }
-
-
-
-
-
-    //private final LinkedList<String> mWordList;
-
-
-
-
 
 
     public class ViewHolder extends RecyclerView.ViewHolder
@@ -129,7 +113,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         public ViewHolder(View itemView, MyAdapter adapter) {
             super(itemView);
             context = itemView.getContext();
-            //wordItemView = itemView.findViewById(R.id.recipe_tittle);
             textViewHead = (TextView) itemView.findViewById(R.id.recipe_tittle);
             textViewDesc = (TextView) itemView.findViewById(R.id.recipe_short);
             this.mAdapter = adapter;
@@ -154,31 +137,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             intent.putExtra("content", listItems.get(mPosition).getContent());
             intent.putExtra("image", listItems.get(mPosition).getImage());
             context.startActivity(intent);
-
-            // Use that to access the affected item in mWordList.
-            //String element = mWordList.get(mPosition);
-            // Change the recipe_tittle in the mWordList.
-
-           // mWordList.set(mPosition, "Clicked! " + element);
-            // Notify the adapter, that the data has changed so it can
-            // update the RecyclerView to display the data.
-            //mAdapter.notifyDataSetChanged();
-
         }
-
-
-
-
-
-
     }
-
-
-
-    /*public MyAdapter(Context context, LinkedList<String> wordList) {
-        mInflater = LayoutInflater.from(context);
-        this.listItems = wordList;
-    }*/
-
-
 }

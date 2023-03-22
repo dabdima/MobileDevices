@@ -36,7 +36,6 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
 
-    //private final LinkedList<String> mWordList = new LinkedList<>(); //!!!!!!
     private List<ListItem> listItems;
 
     private String recipeName;
@@ -61,20 +60,10 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*int wordListSize = listItems.size();
-                // Add a new recipe_tittle to the wordList.
-                listItems.addLast("+ Word " + wordListSize);
-                // Notify the adapter, that the data has changed.
-                mRecyclerView.getAdapter().notifyItemInserted(wordListSize);
-                // Scroll to the bottom.
-                mRecyclerView.smoothScrollToPosition(wordListSize);*/
-
-
             }
         });
 
         // Put initial data into the recipe_tittle list.
-
 
         listItems = new ArrayList<>();
         listItems.add(new ListItem("Vegeterian Kids Lunch Box", "A lunch box filled with scrumptious dishes for kids to enjoy their lunch time.  Kids love to be enterained with varieties and I have compiled into delectable dishes for the little ones to munch on.", "Ingredients:\nFor Masala Veg Idly : Idly batter 1 cup\n1/3 cup finely chopped carrot, peas and corn\n1/4 teaspoon turmeric powder\n1/4 teaspoon chilli powder\n1 teaspoon Ghee\n2 Pinches of Himalaya salt for Idly batter\nFor Babycorn Capsicum Stir Fry : 3/4 cup chopped Baby corns\n1/3 cup sliced Red and Yellow capsicum\n1 Finely chopped onion\n1/2 teaspoon turmeric powder\n1/2 teaspoon Chilli powder\n1/4 teaspoon Himalaya salt\nFor Curd Rice : 1 Cup cooked rice\n2/3 cup thick yogurt\n1/4 teaspoon plus 2 pinches of Himalaya salt\n1 teaspoon Soyabean flour\n1\" peeled Ginger\n1/2 Green chilli\n3 curry leaves\n1 teaspoon chopped green coriander leaves\n1 teaspoon Oil\n1/4 teaspoon mustard seeds\n1/4 teaspoon Urad dhal\n1/4 teaspoon Asafoetida\nFor Dates Cashewnut Kozhukattai : 1/2 Cup rice flour\n1 cup water\n2 pinches of Himalaya salt\n6 Pitted Dates\n3/4 teaspoon Ghee\n6 Cashew nuts\n1 Apple", "@drawable/p1"));
@@ -84,15 +73,10 @@ public class MainActivity extends AppCompatActivity {
         listItems.add(new ListItem("Tomato Bisque", "Store the chive oil in a refrigerator and use it within a month. Remove the oil from the refrigerator a couple hours before using in case any congealing occurs.", "4 tablespoons butter\n1/2 large onion\n1 medium carrot\n1/2 celery stalk\n4 garlic cloves\n2 tablespoons tomato paste\n5 tablespoons AP flour\n5 cups chicken stock\n4 cups crushed tomato\n3 parsely sprigs\n3 thyme sprigs\n2 bay leaves\n2 teaspoons salt\n1 teaspoon pepper", "@drawable/p5"));
         listItems.add(new ListItem("Kale Salad", "Kale grows strong and mighty in Alaska in July and August. One day, when our root cellar was overflowing with this delicious green, our cook Janet suggested this as an alternative to pan-frying and a new favorite salad was born!", "Kale grows strong and mighty in Alaska in July and August. One day, when our root cellar was overflowing with this delicious green, our cook Janet suggested this as an alternative to pan-frying and a new favorite salad was born!\nBoth guests and staff love this salad and this recipe is a great way to showcase how good raw kale can be. The acids in the Braggs Amino Acids and the lemon juice help break down the kale similar to sautéing the green, but while better maintaining its health benefits. We’ve found that letting the salad marinate longer and massaging it occasionally makes for a more tender end result. This salad is still good the following day, so you might think about making a little extra. \nThis recipe originally comes from the Esalen Cookbook.", "@drawable/p6"));
 
-
-        // Create recycler view.
-
         // Create an adapter and supply the data to be displayed.
         adapter = new MyAdapter(listItems, this);
         // Connect the adapter with the recycler view.
         recyclerView.setAdapter(adapter);
-
-
         }
 
     /**
@@ -127,44 +111,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-
-    /*public void showRecipe(View view) {
-        Intent intent = new Intent(MainActivity.this,
-                RecipeActivity.class);
-        if(view.getId() == R.id.donut){
-            orderName = "Donut";
-        } else if(view.getId() == R.id.ice_cream){
-            orderName = "IceCreamOrder";
-        } else if(view.getId() == R.id.froyo){
-            orderName = "FroyoOrder";
-        }
-
-        intent.putExtra("orderName", orderName);
-        startActivity(intent);
-    }*/
-
-    /*public void showRecipe(TextView view) {
-        Intent intent = new Intent(MainActivity.this,
-                RecipeActivity.class);
-        if(view.getText().toString() == "Vegeterian Kids Lunch Box"){
-            recipeName = "Vegeterian Kids Lunch Box";
-        } else if(view.getText().toString() == "Butter Chicken"){
-            recipeName = "Butter Chicken";
-        } else if(view.getText().toString() == "Beef Enchiladas"){
-            recipeName = "Beef Enchiladas";
-        } else if(view.getText().toString() == "Carrot and Cauliflower Soup"){
-            recipeName = "Carrot and Cauliflower Soup";
-        } else if(view.getText().toString() == "Tomato Bisque"){
-            recipeName = "Tomato Bisque";
-        } else if(view.getText().toString() == "Kale Salad"){
-            recipeName = "Kale Salad";
-        }
-
-        intent.putExtra("recipeName", recipeName);
-        //intent.putExtra("contentFull", contentFull);
-        startActivity(intent);
-    }*/
 }

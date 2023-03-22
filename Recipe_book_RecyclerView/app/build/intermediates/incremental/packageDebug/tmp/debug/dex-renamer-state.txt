@@ -1,4 +1,4 @@
-#Wed Mar 22 01:21:24 IST 2023
+#Wed Mar 22 09:55:52 IST 2023
 base.0=F\:\\Dima\\semestr2_\\MobileDevicesProgramming\\MobileDevices\\Recipe_book_RecyclerView\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

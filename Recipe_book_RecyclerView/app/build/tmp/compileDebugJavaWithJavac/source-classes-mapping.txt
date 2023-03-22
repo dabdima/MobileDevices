@@ -1,10 +1,10 @@
+com/example/android/recipe_book/BuildConfig.java
+ com.example.android.recipe_book.BuildConfig
+com/example/android/recipe_book/ListItem.java
+ com.example.android.recipe_book.ListItem
 com/example/android/recipe_book/MyAdapter.java
  com.example.android.recipe_book.MyAdapter
  com.example.android.recipe_book.MyAdapter$ViewHolder
-com/example/android/recipe_book/ListItem.java
- com.example.android.recipe_book.ListItem
-com/example/android/recipe_book/BuildConfig.java
- com.example.android.recipe_book.BuildConfig
 com/example/android/recipe_book/RecipeActivity.java
  com.example.android.recipe_book.RecipeActivity
 com/example/android/recipe_book/MainActivity.java
